@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    background-color: var(--v-light-grey);
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+
+    --v-light-grey: hsl(0, 0%, 98%);
+    --grayish-blue: hsl(229, 6%, 66%); 
+    --v-dark-blue: hsl(234, 12%, 34%);
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    color: var(--v-dark-blue);
+}
+
+p {
+    color: var(--grayish-blue);
+}
+
+header {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 40rem;
+}
+
+header p{
+    font-size: 1.2rem;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 2.4rem;
+}
+
+.subtitle {
+    font-weight: 600;
+    font-size: 2.4rem;
+}
+
+.container {
+    font-size: 1.2rem;
+    max-width: 120rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+.box {
+    border-radius: .5rem;
+    background-color: white;
+    padding: 2.5rem;
+    position: relative;
+    overflow: hidden;
+    width: 30rem;
+    line-height: 2;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.box::after {
+    content: '';
+    position: absolute;
+    height: .5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.box h3 {
+    margin-bottom: .5rem;
+}
+
+.box p {
+    margin-bottom: 1.5rem;
+}
+
+.box img {
+    display: block;
+    margin-left: auto;
+}
+
+.red-box::after {
+    background-color: var(--red);
+}
+
+.cyan-box::after {
+    background-color: var(--cyan);
+}
+
+.orange-box::after {
+    background-color: var(--orange);
+}
+
+.blue-box::after {
+    background-color: var(--blue);
+}
+
+footer {
+    padding: 2.5rem 4rem;
+    background-color: black;
+    margin: 3rem 0 0;
+}
+
+footer p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: yellow;
+}
+
+
+
+@media (min-width: 1000px){
+    .mid-box {
+        transform: translateY(50%);
+    }
+    
+}
